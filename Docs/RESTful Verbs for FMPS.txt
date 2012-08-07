@@ -1,0 +1,8 @@
+HTTP verbs for FMPS
+
+POST: /PNR	: 
+Verifies if the PNR is unique and is currently not part of the status checker queue
+Adds the new PNR number to the pnr status checker queue
+
+GET: /PNR/1234567890 :
+Does an immediate status check for the PNR on a different request gets the status and responds back with the JSON result

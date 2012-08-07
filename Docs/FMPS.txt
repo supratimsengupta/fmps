@@ -1,0 +1,8 @@
+FMPS stands for Fetch My PNR Status.
+Its my first attempt to write a RESTful Node.js service
+The service will accept a valid 10 digit pnr number and will periodically check for changes to the PNR status.
+If it finds any change in the PNR status it will notify the user about the same
+Expected Inputs
+	Valid 10 digit PNR number
+	Valid mobile number
+	Valid email number

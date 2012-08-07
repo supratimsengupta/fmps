@@ -1,0 +1,29 @@
+Indian Railways PNR Enquiry API
+
+Request:
+
+http://pnrapi.appspot.com/<10-digit-pnr-number>
+Sample Response:
+
+"status" : "OK",
+"data" : { 
+          "train_name" : "ERNAKULAM EXP",
+          "train_number" : "*12677",
+          "from" : "SBC",
+          "to" : "CBE",
+          "alight" : "CBE",
+          "board" : "SBC",
+          "class" : "2S",
+          "travel_date" : "2- 6-2011"
+          "passenger" : [ { "seat_number" : "D8  , 31,GN", "status" : "CNF" },
+                          { "seat_number" : "D8  , 32,GN", "status" : "CNF" } ]
+         }
+Options:
+
+Supports JSONP. Example: http://pnrapi.appspot.com/<10-digit-pnr-number>?jsonp=yourcallbackfunction
+Status Codes:
+
+Code	What it means
+OK	All iz well. You should get a response
+TIMEOUT	There was a server timeout. Server timeout is 1 second.
+INVALID	Invalid PNR Number. It doesn't exist.
