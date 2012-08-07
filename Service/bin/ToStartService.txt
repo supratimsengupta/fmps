@@ -1,0 +1,4 @@
+To start mongodb server use
+	mongod.exe --<your path to data folder>
+eg:
+	mongod.exe --dbpath "C:\Users\ssengupta\Documents\GitHub\fmps\Service"
